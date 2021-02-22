@@ -77,6 +77,14 @@ a {
   background-color: transparent;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 @media (min-width: 768px) {
 .navbar-expand-md .navbar-collapse {
     display: -ms-flexbox!important;
@@ -89,6 +97,15 @@ a {
 .justify-content-end {
   -ms-flex-pack: end!important;
   justify-content: flex-end!important;
+}
+
+@media (min-width: 768px){
+.navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
 }
 
 @media (min-width: 768px){
